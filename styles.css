@@ -1,0 +1,220 @@
+/* General Styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  color: #333;
+  background-color: #F4F4F4;
+}
+
+header {
+  background: #003366;
+  color: #fff;
+  padding: 1rem 0;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  margin: 0; /* Added to fix default margin */
+}
+
+nav ul li {
+  display: inline;
+  margin: 0 15px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+nav ul li a:hover {
+  color: #FFD700;
+}
+
+/* Logo Styles */
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #00be16;
+  position: relative;
+  margin-left: 20px; /* Added to prevent overlap */
+}
+
+.logo-image {
+  width: 30px;
+  height: auto;
+  position: relative;
+  left: -10px; /* Changed from -100mm to -10px */
+}
+
+/* Home Section */
+#home {
+  background-image: url('images/corporate-background.jpg');
+  background-size: cover; /* Changed from 105% for better responsiveness */
+  background-position: center;
+  background-repeat: no-repeat;
+  color: #ffffff;
+  padding: 4rem 2rem;
+  text-align: center;
+  position: relative;
+}
+
+#home::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 1;
+}
+
+#home h1,
+#home p,
+#home .cta-button {
+  position: relative;
+  z-index: 2;
+}
+
+.cta-button {
+  display: inline-block;
+  background: #FF6600;
+  color: #fff;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  margin-top: 20px;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+.cta-button:hover {
+  background: #FF4500;
+}
+
+/* About Section */
+#about {
+  padding: 2rem;
+  text-align: center;
+}
+
+.about-content {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.about-image {
+  width: 300px;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.bio {
+  flex: 1;
+  text-align: left;
+}
+
+.bio h3 {
+  color: #003366; /* Navy blue */
+  margin-bottom: 1rem;
+}
+
+.bio p {
+  color: #333; /* Dark gray */
+  margin-bottom: 1.5rem;
+  line-height: 1.8; /* Improved readability */
+}
+
+/* Services Section */
+#services {
+  padding: 2rem;
+  text-align: center;
+}
+
+.service {
+  background: #fff;
+  padding: 1rem;
+  margin: 1rem 0;
+  border-radius: 5px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Testimonials Section */
+#testimonials {
+  padding: 2rem;
+  text-align: center;
+}
+
+blockquote {
+  background: #fff;
+  border-left: 5px solid #FF6600;
+  padding: 1rem;
+  margin: 1rem 0;
+  font-style: italic;
+  color: #000000;
+}
+
+cite {
+  display: block;
+  margin-top: 10px;
+  font-weight: bold;
+  color: #003366;
+}
+
+/* Contact Section */
+#contact {
+  padding: 2rem;
+  text-align: center;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+  text-align: left;
+}
+
+form input, form textarea {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+form button {
+  background: #FF6600;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  transition: background 0.3s ease;
+}
+
+form button:hover {
+  background: #FF4500;
+}
+
+/* Footer */
+footer {
+  background: #003366;
+  color: #fff;
+  text-align: center;
+  padding: 1rem 0;
+  margin-top: 2rem;
+}
