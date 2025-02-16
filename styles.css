@@ -50,7 +50,7 @@ nav ul li a:hover {
 }
 
 .logo-image {
-  width: 50px; /* Smaller logo for mobile */
+  width: 70px; /* Smaller logo for mobile */
   height: auto;
 }
 
@@ -74,7 +74,12 @@ nav ul li a:hover {
   right: 0;
   bottom: 0;
   background: rgba(0, 0, 0, 0.5);
-  z-index: 1;
+  z-index: 1; /* Ensure the overlay is below the content */
+}
+
+.home-content {
+  position: relative; /* Ensure the content is above the overlay */
+  z-index: 2; /* Higher z-index than the overlay */
 }
 
 #home h1 {
@@ -95,6 +100,8 @@ nav ul li a:hover {
   margin-top: 20px;
   font-weight: bold;
   transition: background 0.3s ease;
+  position: relative; /* Ensure the button is clickable */
+  z-index: 3; /* Higher z-index than the overlay and content */
 }
 
 .cta-button:hover {
