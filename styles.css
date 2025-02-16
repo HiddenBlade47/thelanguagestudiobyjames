@@ -18,12 +18,14 @@ header {
 nav ul {
   list-style: none;
   padding: 0;
-  margin: 0; /* Added to fix default margin */
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap; /* Allow nav items to wrap on smaller screens */
+  justify-content: center;
 }
 
 nav ul li {
-  display: inline;
-  margin: 0 15px;
+  margin: 0 10px; /* Reduced margin for smaller screens */
 }
 
 nav ul li a {
@@ -44,25 +46,22 @@ nav ul li a:hover {
   font-size: 1.5rem;
   font-weight: bold;
   color: #00be16;
-  position: relative;
-  margin-left: 20px; /* Added to prevent overlap */
+  margin-left: 10px; /* Reduced margin for smaller screens */
 }
 
 .logo-image {
-  width: 30px;
+  width: 50px; /* Smaller logo for mobile */
   height: auto;
-  position: relative;
-  left: -10px; /* Changed from -100mm to -10px */
 }
 
 /* Home Section */
 #home {
   background-image: url('images/corporate-background.jpg');
-  background-size: cover; /* Changed from 105% for better responsiveness */
+  background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
   color: #ffffff;
-  padding: 4rem 2rem;
+  padding: 2rem 1rem; /* Reduced padding for smaller screens */
   text-align: center;
   position: relative;
 }
@@ -78,11 +77,12 @@ nav ul li a:hover {
   z-index: 1;
 }
 
-#home h1,
-#home p,
-#home .cta-button {
-  position: relative;
-  z-index: 2;
+#home h1 {
+  font-size: 2rem; /* Smaller font size for mobile */
+}
+
+#home p {
+  font-size: 1rem;
 }
 
 .cta-button {
@@ -103,45 +103,46 @@ nav ul li a:hover {
 
 /* About Section */
 #about {
-  padding: 2rem;
+  padding: 1rem; /* Reduced padding for smaller screens */
   text-align: center;
 }
 
 .about-content {
   display: flex;
+  flex-direction: column; /* Stack content vertically on mobile */
   align-items: center;
-  gap: 2rem;
+  gap: 1rem; /* Reduced gap for smaller screens */
   max-width: 1200px;
   margin: 0 auto;
-  padding: 2rem;
+  padding: 1rem;
 }
 
 .about-image {
-  width: 300px;
+  width: 100%; /* Full width for mobile */
+  max-width: 300px; /* Limit maximum width */
   height: auto;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .bio {
-  flex: 1;
-  text-align: left;
+  text-align: center; /* Center text on mobile */
 }
 
 .bio h3 {
-  color: #003366; /* Navy blue */
+  color: #003366;
   margin-bottom: 1rem;
 }
 
 .bio p {
-  color: #333; /* Dark gray */
+  color: #333;
   margin-bottom: 1.5rem;
-  line-height: 1.8; /* Improved readability */
+  line-height: 1.8;
 }
 
 /* Services Section */
 #services {
-  padding: 2rem;
+  padding: 1rem; /* Reduced padding for smaller screens */
   text-align: center;
 }
 
@@ -155,7 +156,7 @@ nav ul li a:hover {
 
 /* Testimonials Section */
 #testimonials {
-  padding: 2rem;
+  padding: 1rem; /* Reduced padding for smaller screens */
   text-align: center;
 }
 
@@ -177,14 +178,14 @@ cite {
 
 /* Contact Section */
 #contact {
-  padding: 2rem;
+  padding: 1rem; /* Reduced padding for smaller screens */
   text-align: center;
 }
 
 form {
-  max-width: 400px;
+  max-width: 100%; /* Full width for mobile */
   margin: 0 auto;
-  text-align: left;
+  padding: 0 1rem; /* Add padding for better spacing */
 }
 
 form input, form textarea {
@@ -217,4 +218,62 @@ footer {
   text-align: center;
   padding: 1rem 0;
   margin-top: 2rem;
+}
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.2rem; /* Smaller font size for mobile */
+  }
+
+  .logo-image {
+    width: 40px; /* Smaller logo for mobile */
+  }
+
+  nav ul li {
+    margin: 0 5px; /* Reduced margin for smaller screens */
+  }
+
+  #home h1 {
+    font-size: 1.5rem; /* Smaller font size for mobile */
+  }
+
+  #home p {
+    font-size: 0.9rem;
+  }
+
+  .about-content {
+    flex-direction: column; /* Stack content vertically on mobile */
+  }
+
+  .about-image {
+    width: 100%; /* Full width for mobile */
+    max-width: 250px; /* Limit maximum width */
+  }
+
+  .bio {
+    text-align: center; /* Center text on mobile */
+  }
+}
+
+@media (max-width: 480px) {
+  .logo {
+    font-size: 1rem; /* Even smaller font size for very small screens */
+  }
+
+  .logo-image {
+    width: 30px; /* Even smaller logo for very small screens */
+  }
+
+  nav ul li {
+    margin: 0 3px; /* Further reduced margin for very small screens */
+  }
+
+  #home h1 {
+    font-size: 1.2rem; /* Smaller font size for very small screens */
+  }
+
+  #home p {
+    font-size: 0.8rem;
+  }
 }
