@@ -4,38 +4,65 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="Explore professional language services at The Language Studio By James. Offering one-on-one coaching, business communication, industry-specific training, and translation projects.">
-  <title>Services - The Language Studio By James</title>
+  <meta name="keywords" content="language coaching, business English, corporate English, translation services, industry-specific language training, Corporate English coaching, Business English training, Executive English coaching, English language skills for professionals, English communication skills training, Translation services, Document translation, Website translation, Localization services, Interpretation services, Corporate executives, Business professionals, International business teams, Global companies, Multinational corporations, Small business owners, Entrepreneurs, Expats, Immigrants, Presentation skills training, Negotiation skills training, Email writing skills, Report writing skills, Business writing courses, Accent reduction, Public speaking coaching, Cross-cultural communication training, Medical translation, Technical translation, Financial translation, Improve my business English communication skills, Need help with English presentations for international clients, Translate our company website into English">
+  <meta name="author" content="The Language Studio By James">
+  <title>Professional Language Services | The Language Studio By James</title>
   <link rel="stylesheet" href="styles.css">
+  <!-- Canonical URL to avoid duplicate content issues -->
+  <link rel="canonical" href="https://thelanguagestudiobyjames.com/services" />
+  <!-- Schema Markup for LocalBusiness -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LanguageSchool",
+    "name": "The Language Studio By James",
+    "image": "https://thelanguagestudiobyjames.com/images/hummingbird.jpg",
+    "url": "https://thelanguagestudiobyjames.com",
+    "telephone": "+277741859650",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "2 Montmedy road",
+      "addressLocality": "Port Elizabeth",
+      "postalCode": "6045",
+      "addressCountry": "South Africa"
+    },
+    "description": "Master Corporate English with personalized online coaching at The Language Studio By James. Unlock your language potential today!",
+    "priceRange": "$$$"
+  }
+  </script>
 </head>
 <body>
   <header>
-    <nav>
+    <nav aria-label="Main navigation">
       <div class="logo">
-        <img src="images/hummingbird.jpg" alt="Hummingbird Logo" class="logo-image">
-        The Language Studio By James
+        <img src="images/hummingbird.jpg" alt="The Language Studio By James Logo - A hummingbird symbolizing agility and precision in language learning" class="logo-image">
+        <span>The Language Studio By James</span>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
         <li><a href="about.html">About</a></li>
-        <li><a href="services.html">Services</a></li>
+        <li><a href="services.html" aria-current="page">Services</a></li>
         <li><a href="values.html">Values</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
         <li><a href="contact.html">Contact</a></li>
       </ul>
     </nav>
   </header>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KKP9BK17G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-2KKP9BK17G');
-</script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KKP9BK17G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2KKP9BK17G');
+  </script>
+
   <main>
     <section id="services">
       <h1>Our Services</h1>
+
+      <!-- Service Listings -->
       <div class="service">
         <h2>Standard Lesson Package</h2>
         <p>
@@ -75,7 +102,8 @@
   </main>
 
   <footer>
-    <p>&copy; 2023 The Language Studio By James. All rights reserved.</p>
+    <p>&copy; 2023 The Language Studio By James. All rights reserved.<br>
+    <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
   </footer>
 </body>
 </html>

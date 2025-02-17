@@ -3,7 +3,10 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Contact - The Language Studio By James</title>
+  <meta name="description" content="Contact The Language Studio By James for personalized language coaching and corporate English training. Reach out to Wesley Hayter today!">
+  <meta name="keywords" content="contact language coach, corporate English training, personalized language coaching, Wesley Hayter contact">
+  <meta name="author" content="The Language Studio By James">
+  <title>Contact Us | The Language Studio By James</title>
   <link rel="stylesheet" href="styles.css">
   <style>
     /* General Styles */
@@ -24,29 +27,14 @@
       margin: 20px auto;
       text-align: center;
     }
-
-    #contact h2 {
-      margin-bottom: 20px;
-    }
-
-    #contact a {
-      color: #007BFF;
-      text-decoration: none;
-    }
-
-    #contact a:hover {
-      text-decoration: underline;
-    }
   </style>
 </head>
 <body>
   <header>
-  
-  
-    <nav>
+    <nav aria-label="Main navigation">
       <div class="logo">
-        <img src="images/hummingbird.jpg" alt="Hummingbird Logo" class="logo-image">
-        The Language Studio By James
+        <img src="images/hummingbird.jpg" alt="The Language Studio By James Logo - A hummingbird symbolizing agility and precision in language learning" class="logo-image">
+        <span>The Language Studio By James</span>
       </div>
       <ul>
         <li><a href="index.html">Home</a></li>
@@ -54,27 +42,29 @@
         <li><a href="services.html">Services</a></li>
         <li><a href="values.html">Values</a></li>
         <li><a href="testimonials.html">Testimonials</a></li>
-        <li><a href="contact.html">Contact</a></li>
+        <li><a href="contact.html" aria-current="page">Contact</a></li>
       </ul>
     </nav>
   </header>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-2KKP9BK17G"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
 
-  gtag('config', 'G-2KKP9BK17G');
-</script>
-  
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-2KKP9BK17G"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+    gtag('config', 'G-2KKP9BK17G');
+  </script>
+
   <section id="contact">
-    <h2>Contact Us</h2>
-    <p>If you have any questions or would like to get in touch, please reach out to our CEO, Wesley Hayter, at <a href="mailto:Wesley@thelanguagestudiobyjames.com">Wesley@thelanguagestudiobyjames.com</a>.</p>
+    <h1>Contact Us</h1>
+    <p>If you have any questions or would like to get in touch, please reach out to our CEO, Wesley James Hayter:</p>
+    <a href="mailto:Wesley@thelanguagestudiobyjames.com" class="cta-button">Email Wesley</a>
   </section>
 
   <footer>
-    <p>&copy; 2023 The Language Studio By James. All rights reserved.</p>
+    <p>&copy; 2023 The Language Studio By James. All rights reserved.<br>
+    <a href="privacy-policy.html">Privacy Policy</a> | <a href="terms-of-service.html">Terms of Service</a></p>
   </footer>
 </body>
 </html>
