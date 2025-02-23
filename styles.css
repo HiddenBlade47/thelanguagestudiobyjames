@@ -635,7 +635,3 @@ button:hover ~ .hummingbird-cursor {
   border-radius: 8px;
   margin-bottom: 1.5rem;
 }
-.admin-link {
-  color: #e74c3c !important;
-  font-weight: 600;
-}
